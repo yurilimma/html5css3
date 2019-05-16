@@ -16,11 +16,19 @@ main h1{ /* h1, dentro do main*/
     border-bottom: 10px solid black;
     padding: 25px; /* espaçamento entre o texto e a borda*/
 }
+main a {
+	color: #851944;
+}
+h2{ 
+    font-family: "Open Sans Condensed", "Arial", sans-serif;  /*se não tiver a fonte Open Sans ele coloca Arial se não tiver Arial, coloca sans-serif que é default do navegador*/
+    font-size: 40px;
+}
 p{
     text-align: justify;
+    margin: 30px 0;
 }
 blockquote{
-    background-color: #D9E5E3;
+    background-color: #D3DDDA;
     border: 10px solid #C2CCCA;/*adicionando borda em volta do blockquote, tamanho borda + tipo borda + cor borda*/
     /*
     tipos de borda:
@@ -29,25 +37,45 @@ blockquote{
     doted 
     entre outras
     */
+    padding: 16px;
     width: 250px; /*largura borda / blockquote*/
-    margin: 20px 40px; /* remodela a margem do elemento blockquote*/
+    margin: 0; /* remodela a margem do elemento blockquote*/
     box-sizing: border-box; /* faz contar o tamanho do blockquote(250) de borda a borda*/
 }
-aside {
-	background-color: #3C1D3D;
-	color: #F2FFFC;
+strong{
+    font-weight: 600;
+}
+em{
+    font-style: italic;
+}
+aside{
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    text-align: center;
+    padding: 20px;
+    font-family:  "Open Sans Condensed", sans-serif;
+    border: 10px solid #000;
+    width: 250px;
+    box-sizing: border-box;
+}
+nav h1{
+    font-size: 30px;
+    margin-bottom: 25px;
+
+}
+li{
+    display: inline-block;
+
+}
+nav a {
+	color: inherit;
 }
 footer {
 	background-color: #000;
 	color: #F2FFFC;
 }
-nav a {
-	color: #F2FFFC;
-}
 
-main a {
-	color: #851944;
-}
+
 
 aside a {
 	color: inherit;
@@ -71,13 +99,3 @@ aside h1 {
 	margin-bottom: 25px;
 }
 
-strong {
-	font-weight: bold;
-}
-em {
-	font-style: italic;
-}
-h2{ 
-    /*font-family: "Open Sans Condensed", "Arial", sans-serif;  se não tiver a fonte Open Sans ele coloca Arial se não tiver Arial, coloca sans-serif que é default do navegador*/
-    font-size: 30px;
-}
