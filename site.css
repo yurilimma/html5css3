@@ -23,6 +23,8 @@ main a {
 h2{ 
     font-family: "Open Sans Condensed", "Arial", sans-serif;  /*se não tiver a fonte Open Sans ele coloca Arial se não tiver Arial, coloca sans-serif que é default do navegador*/
     font-size: 40px;
+    /*clear: right; nenhum h2 pode ter um float a sua direita*/
+    clear: both; /* não pode ter float em nenhum dos dois lados*/
 }
 p{
     text-align: justify;
@@ -43,6 +45,14 @@ blockquote{
     margin: 0; /* remodela a margem do elemento blockquote*/
     box-sizing: border-box; /* faz contar o tamanho do blockquote(250) de borda a borda*/
 }
+.experiencia-blockquote{
+    float: left;
+    margin: 10px;
+}
+.como-trabalho-blockquote{
+    float: right;
+    margin: 10px;
+}
 strong{
     font-weight: 600;
 }
@@ -58,6 +68,12 @@ aside{
     border: 10px solid #000;
     width: 250px;
     box-sizing: border-box;
+    clear: right;
+    float: right;
+    width: 15%;
+    position: absolute;
+    top: 310px;
+    right: 0px;
 }
 nav h1{
     font-size: 30px;
@@ -71,7 +87,11 @@ nav a {
 }
 .rodape-css {
 	background-color: #000;
-	color: #F2FFFC;
+    color: #F2FFFC;
+    clear: both;
+    position: fixed;  /* rodapé vai andar junto com a barra de rolagem*/
+    bottom: 0;
+    width: 100%;
 }
 
 .navegacao-site a {
@@ -112,7 +132,6 @@ main div {
     height: 40px;
     display: inline-block;
     text-indent: -99999px; /*joga um valor alto pro texto sair da tela*/
-
 }
 /* image replacement*/
 .github{
@@ -123,4 +142,18 @@ main div {
 }
 .twitter{
     background-image: url(twitter.png);
+}
+.joao-foto{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border: 10px solid #000;
+}
+main{
+    float: left;
+    width: 85%;
+    
+}
+cite{
+    font-style: italic;
 }
