@@ -15,6 +15,7 @@ main h1{ /* h1, dentro do main*/
     text-align: center; /* centraliza o texto*/
     border-bottom: 10px solid black;
     padding: 25px; /* espaçamento entre o texto e a borda*/
+    text-transform: uppercase; /*coloca maiusculo*/
 }
 main a {
 	color: #851944;
@@ -63,26 +64,22 @@ nav h1{
     margin-bottom: 25px;
 
 }
-li{
-    display: inline-block;
 
-}
 nav a {
-	color: inherit;
+    color: inherit;
+    text-transform: lowercase;
 }
-footer {
+.rodape-css {
 	background-color: #000;
 	color: #F2FFFC;
 }
 
-
-
-aside a {
+.navegacao-site a {
 	color: inherit;
 	font-family: "Open Sans Condensed", sans-serif;
 }
 
-blockquote, aside, footer {
+blockquote, .navegacao-site, footer {
     padding: 20px;
 }
 main div {
@@ -91,11 +88,39 @@ main div {
 	padding: 30px 0;
 }
 
-aside {
+.navegacao-site {
 	text-align: center;
 }
-aside h1 {
+.navegacao-site h1 {
 	font-size: 30px;
 	margin-bottom: 25px;
 }
 
+.leia-mais{
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #E6E7E8;
+    display: block;
+}
+.icones-sociais li{
+    display: inline-block;
+}
+.icones-sociais a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-indent: -99999px; /*joga um valor alto pro texto sair da tela*/
+
+}
+/* image replacement*/
+.github{
+    background-image: url(github.png);
+}
+.linkedin{
+    background-image: url(linkedin.png);
+}
+.twitter{
+    background-image: url(twitter.png);
+}
