@@ -135,13 +135,13 @@ main div {
 }
 /* image replacement*/
 .github{
-    background-image: url(github.png);
+    background-image: url(../img/github.png);
 }
 .linkedin{
-    background-image: url(linkedin.png);
+    background-image: url(../img/linkedin.png);
 }
 .twitter{
-    background-image: url(twitter.png);
+    background-image: url(../img/twitter.png);
 }
 .joao-foto{
     position: absolute;
