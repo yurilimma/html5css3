@@ -157,3 +157,35 @@ main{
 cite{
     font-style: italic;
 }
+main figure{
+    border: 8px solid #000;
+    background-color: #FAFFFC;
+    margin: 16px;
+    padding: 16px;
+
+    width: 250px;
+    height: 120px;
+    display: inline-block;
+    text-indent: -99999px; /*joga um valor alto pro texto sair da tela*/
+    
+}
+
+main .div-portfolio{
+    padding-bottom: 400px;
+}
+.figure-bmw{
+    background-image: url(../img/bmw.png);
+    
+}
+.figure-ibm{
+    background-image: url(../img/ibm.png);
+    
+}
+.figure-uol{
+    background-image: url(../img/uol.png);
+    float: right;
+}
+.figure-g1{
+    background-image: url(../img/g1.png);
+    float: right;
+}
